@@ -1,6 +1,11 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
+# Replace the "❯" symbol in the prompt with "➜"
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[😁](bold green)"
+error_symbol = "😭"
+
 # Azure CLI stuff
 [azure]
 disabled = false
