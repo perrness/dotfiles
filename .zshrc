@@ -55,6 +55,7 @@ alias codezsh="code ~/.zshrc"
 alias -g k="kubectl"
 alias -g ks="kubens"
 alias -g kx="kubectx"
+alias -g tf="terraform"
 
 #Autcomplete for kubectl
 [[ /opt/homebrew/bin/kubectl ]] && source <(kubectl completion zsh)
