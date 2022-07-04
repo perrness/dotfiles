@@ -62,3 +62,8 @@ alias -g tf="terraform"
 
 #Enable starship
 eval "$(starship init zsh)"
+
+#Kubelogin
+export KUBECONFIG=~/.kube/config
+kubelogin convert-kubeconfig
+kubectl get no
