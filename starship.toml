@@ -15,7 +15,7 @@ style = "blue bold"
 
 # Kubernetes
 [kubernetes]
-format = 'on [⛵ ($user on )($cluster in )$context \($namespace\)](dimmed green) '
+format = 'on [🔥 ($cluster in )\($namespace\)](bold yellow) '
 disabled = true
 [kubernetes.context_aliases]
 "dev.local.cluster.k8s" = "dev"
