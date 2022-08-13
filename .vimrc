@@ -24,6 +24,7 @@ set signcolumn=yes
 set backspace=indent,eol,start
 set termguicolors
 set background=dark
+set encoding=utf-8
 
 let g:netrw_liststyle = 3
 
