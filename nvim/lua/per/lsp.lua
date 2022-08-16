@@ -68,7 +68,7 @@ require('lspconfig')['dockerls'].setup{
 --     flags = lsp_flags,
 -- }
 
-require('lspconfig')['jsonnetls'].setup{
+require('lspconfig')['jsonnet_ls'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
