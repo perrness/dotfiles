@@ -1,6 +1,12 @@
 local rt = require("rust-tools")
 
 rt.setup({
+  tools = {
+    inlay_hints = {
+      auto = true,
+      only_current_line = true,
+    }
+  },
   server = {
     on_attach = function(_, bufnr)
       -- Hover actions
