@@ -53,6 +53,35 @@ require('lspconfig')['tsserver'].setup{
     flags = lsp_flags,
 }
 
+require('lspconfig')['dockerls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+
+-- require('lspconfig')['java_language_server'].setup{
+--     on_attach = on_attach,
+--     flags = lsp_flags,
+-- }
+-- 
+-- require('lspconfig')['kotlin_language_server'].setup{
+--     on_attach = on_attach,
+--     flags = lsp_flags,
+-- }
+
+require('lspconfig')['jsonnetls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+
+require('lspconfig')['jsonls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+
+require('lspconfig')['yamlls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
 -- require('lspconfig')['rust_analyzer'].setup{
 --     on_attach = on_attach,
 --     flags = lsp_flags,
