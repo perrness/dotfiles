@@ -30,4 +30,5 @@ return require('packer').startup(function(use)
   }
   use 'windwp/nvim-autopairs'
   use 'folke/tokyonight.nvim'
+  use 'feline-nvim/feline.nvim'
 end)
