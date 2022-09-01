@@ -7,7 +7,7 @@ vim.opt.encoding = 'utf-8'
 vim.opt.hidden = true
 
 vim.opt.nu = true
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
