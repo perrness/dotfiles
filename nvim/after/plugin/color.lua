@@ -18,8 +18,12 @@
 --   end
 -- })
 
-vim.g.tokyonight_transparent_sidebar = true
-vim.g.tokyonight_transparent = true
+-- vim.g.tokyonight_transparent_sidebar = true
+-- vim.g.tokyonight_transparent = true
+-- vim.g.tokyonight_style = "day"
 vim.opt.background = "dark"
 
-vim.cmd("colorscheme tokyonight")
+-- vim.cmd("colorscheme tokyonight")
+-- vim.cmd("colorscheme gruvbox")
+vim.g.catppuccin_flavour = "macchiato"
+vim.cmd("colorscheme catppuccin")

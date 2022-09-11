@@ -30,5 +30,7 @@ return require('packer').startup(function(use)
   }
   use 'windwp/nvim-autopairs'
   use 'folke/tokyonight.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
+  use { "ellisonleao/gruvbox.nvim" }
   use 'feline-nvim/feline.nvim'
 end)

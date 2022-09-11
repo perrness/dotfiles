@@ -6,7 +6,7 @@ vim.opt.encoding = 'utf-8'
 -- Keep buffers open
 vim.opt.hidden = true
 
-vim.opt.nu = true
+vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.tabstop = 2
