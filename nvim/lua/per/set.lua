@@ -15,6 +15,7 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
+vim.opt.laststatus = 3
 
 vim.opt.scrolloff = 8
 
@@ -39,7 +40,13 @@ vim.g.netrw_liststyle = 3
 -- vim.g.netrw_altv = 1
 -- vim.g.netrw_winsize = 25
 
+
+-- disable netrw at beginning
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
+
 -- providers
 vim.g.loaded_python3_provider = 0
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_perl_provider = 0
+
