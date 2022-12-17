@@ -13,6 +13,9 @@ format = "on [$symbol($subscription)]($style) "
 symbol = "ﴃ "
 style = "blue bold"
 
+[gcloud]
+disabled = true
+
 # Kubernetes
 [kubernetes]
 format = 'on [🔥 ($cluster in )\($namespace\)](bold yellow) '
