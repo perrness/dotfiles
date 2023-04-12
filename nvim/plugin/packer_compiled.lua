@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/perrichardnaess/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/Users/perrichardnaess/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/perrichardnaess/.local/share/nvim/site/pack/packer/start/nvim-autopairs",

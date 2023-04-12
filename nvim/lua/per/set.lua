@@ -50,3 +50,23 @@ vim.g.loaded_python3_provider = 0
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_perl_provider = 0
 
+vim.api.nvim_create_augroup("nvim_tree_augroup", { clear = true })
+vim.api.nvim_create_autocmd("VimEnter", {
+    group = "nvim_tree_augroup",
+    callback = function(data)
+        -- buffer is a [No Name]
+        local no_name = data.file == "" and vim.bo[data.buf].buftype == ""
+        -- buffer is a directory
+        local directory = vim.fn.isdirectory(data.file) == 1
+        if not no_name and not directory then
+            return
+        end
+
+        -- change to the directory
+        if directory then
+            vim.cmd.cd(data.file)
+        end
+        -- open the tree
+        require("nvim-tree.api").tree.open()
+    end,
+})

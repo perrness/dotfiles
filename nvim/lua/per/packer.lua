@@ -34,4 +34,8 @@ return require('packer').startup(function(use)
   use { "ellisonleao/gruvbox.nvim" }
   use 'feline-nvim/feline.nvim'
   use 'google/vim-jsonnet'
+  use {
+    "williamboman/mason.nvim",
+    run = ":MasonUpdate" -- :MasonUpdate updates registry contents
+  }
 end)
