@@ -42,7 +42,7 @@ local file_type_component = {
   provider = {
     name = 'file_type',
     opts = {
-      filetype_icon = false,
+      filetype_icon = true,
       case = 'titlecase',
     },
   },

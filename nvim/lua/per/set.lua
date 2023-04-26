@@ -1,6 +1,6 @@
 vim.opt.exrc = true
 vim.opt.guicursor = ''
-vim.opt.showmode = true
+vim.opt.showmode = false
 vim.opt.encoding = 'utf-8'
 
 -- Keep buffers open

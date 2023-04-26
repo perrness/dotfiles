@@ -36,6 +36,7 @@ return require('packer').startup(function(use)
   use 'google/vim-jsonnet'
   use {
     "williamboman/mason.nvim",
-    run = ":MasonUpdate" -- :MasonUpdate updates registry contents
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
   }
 end)
