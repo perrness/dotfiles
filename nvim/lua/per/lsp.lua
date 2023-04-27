@@ -58,14 +58,10 @@ require('lspconfig')['dockerls'].setup{
     flags = lsp_flags,
 }
 
--- require('lspconfig')['java_language_server'].setup{
---      on_attach = on_attach,
---      flags = lsp_flags,
--- }
- 
-require('lspconfig')['kotlin_language_server'].setup{
-     on_attach = on_attach,
-     flags = lsp_flags,
+
+  require('lspconfig')['sqlls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
 }
 
 require('lspconfig')['jsonnet_ls'].setup{
