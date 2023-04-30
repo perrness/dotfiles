@@ -6,5 +6,6 @@ cp -R ~/.config/nvim .
 cp -R ~/.config/alacritty .
 cp -R ~/.config/fish .
 cp -R ~/.config/starship.toml starship.toml
+cp -R ~/.local/bin .local/
 
 echo "Update complete."
