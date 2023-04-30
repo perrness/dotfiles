@@ -43,3 +43,5 @@ start_tmux_session() {
 
 find_directory
 start_tmux_session
+
+exit 0
