@@ -9,13 +9,35 @@ find_directory() {
   session_name=$(echo $directory | sed -e 's/.*\///g')
 }
 
+start_new_tmux() {
+  tmux new -s $session_name -c $directory -d
+}
+
+switch_tmux_client() {
+  tmux switch-client -t $session_name
+}
+
+attach_tmux_client() {
+  tmux attach -t $session_name
+}
+
 start_tmux_session() {
-  if [ ! $TMUX ]; then
-    tmux new -s $session_name -c $directory -d
-    tmux attach -t $session_name
+  tmux has-session -t $session_name 2>/dev/null
+
+  if [ $? -eq 0 ]; then
+    if [ ! $TMUX ]; then
+      attach_tmux_client
+    else
+      switch_tmux_client
+    fi
   else
-    tmux new -s $session_name -c $directory -d
-    tmux switch-client -t $session_name
+    if [ ! $TMUX ]; then
+      start_new_tmux
+      attach_tmux_client
+    else
+      start_new_tmux
+      switch_tmux_client
+    fi
   fi
 }
 
