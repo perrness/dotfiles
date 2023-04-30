@@ -43,40 +43,62 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
+-- Make the autocomplete sweet af
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+
+require('lspconfig')['lua_ls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+}
+
 require('lspconfig')['terraformls'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+    capabilities = capabilities,
 }
 
 require('lspconfig')['tsserver'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+    capabilities = capabilities,
 }
 
 require('lspconfig')['dockerls'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+    capabilities = capabilities,
 }
 
+require('lspconfig')['bashls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+}
 
   require('lspconfig')['sqlls'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+    capabilities = capabilities,
 }
 
 require('lspconfig')['jsonnet_ls'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+    capabilities = capabilities,
 }
 
--- require('lspconfig')['jsonls'].setup{
---     on_attach = on_attach,
---     flags = lsp_flags,
--- }
+require('lspconfig')['jsonls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+}
 
 require('lspconfig')['yamlls'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+    capabilities = capabilities,
 }
 require('lspconfig')['rust_analyzer'].setup{
     on_attach = on_attach,
@@ -84,7 +106,8 @@ require('lspconfig')['rust_analyzer'].setup{
     -- Server-specific settings...
     settings = {
       ["rust-analyzer"] = {}
-    }
+    },
+    capabilities = capabilities,
 }
 
 -- vim.lsp.set_log_level("debug")
