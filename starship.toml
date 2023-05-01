@@ -18,7 +18,7 @@ disabled = true
 
 # Kubernetes
 [kubernetes]
-format = 'on [🔥 ($cluster in )\($namespace\)](bold yellow) '
+format = 'on [☸ ($cluster in )\($namespace\)](bold yellow) '
 disabled = true
 [kubernetes.context_aliases]
 "dev.local.cluster.k8s" = "dev"
