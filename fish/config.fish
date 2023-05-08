@@ -32,4 +32,4 @@ if [ -f '/Users/pernaess/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/
 set -x PATH "/Library/Frameworks/Python.framework/Versions/3.10/bin" "$PATH"
 
 # Keybindings
-bind \cf '~/.local/bin/search_directory_and_open_in_tmux.sh'
+bind \cf '~/repos/dotfiles/.local/bin/search_directory_and_open_in_tmux.sh'
