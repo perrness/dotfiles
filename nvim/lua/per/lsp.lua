@@ -123,4 +123,10 @@ require('lspconfig')['rust_analyzer'].setup {
   capabilities = capabilities,
 }
 
+require('lspconfig')['gopls'].setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+  capabilities = capabilities,
+}
+
 -- vim.lsp.set_log_level("debug")
