@@ -10,7 +10,7 @@ error_symbol = "[<-](bold red)"
 [azure]
 disabled = false
 format = "on [$symbol($subscription)]($style) "
-symbol = "ﴃ "
+symbol = "☁ "
 style = "blue bold"
 
 [gcloud]
