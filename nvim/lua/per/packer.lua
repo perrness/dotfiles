@@ -31,7 +31,7 @@ return require('packer').startup(function(use)
   use 'folke/tokyonight.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
   use { "ellisonleao/gruvbox.nvim" }
-  use 'feline-nvim/feline.nvim'
+  use 'freddiehaddad/feline.nvim'
   use 'google/vim-jsonnet'
   use {
     "williamboman/mason.nvim",
