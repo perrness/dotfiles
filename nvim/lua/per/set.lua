@@ -26,8 +26,6 @@ vim.opt.signcolumn = 'yes'
 vim.opt.backspace = { 'indent', 'eol', 'start' }
 vim.opt.termguicolors = true
 
-vim.g.colorscheme = 'tokyonight'
-
 vim.opt.title = true
 
 vim.opt.wrap = false
