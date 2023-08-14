@@ -13,3 +13,8 @@ nnoremap ("<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
 nnoremap ("<leader>tt", "<cmd>lua require('nvim-tree.api').tree.focus(false, true)<cr>")
 nnoremap ("<leader>tc", "<cmd>lua require('nvim-tree.api').tree.toggle(false, true)<cr>")
 -- nnoremap ("<leader>tt", ":NvimTreeToggle<cr>")
+
+-- move-lines
+nnoremap ("ª", "<cmd>:m-2<CR>")
+nnoremap ("√", "<cmd>:m+<CR>")
+
