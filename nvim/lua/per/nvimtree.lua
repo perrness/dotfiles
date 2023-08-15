@@ -1,7 +1,5 @@
 --
 -- This function has been generated from your
---   view.mappings.list
---   view.mappings.custom_only
 --   remove_keymaps
 --
 -- You should add this function to your configuration and set on_attach = on_attach in the nvim-tree setup call.
@@ -81,8 +79,6 @@ local function on_attach(bufnr)
   -- END_DEFAULT_ON_ATTACH
 
 
-  -- Mappings migrated from view.mappings.list
-  --
   -- You will need to insert "your code goes here" for any mappings with a custom action_cb
   vim.keymap.set('n', 'u', api.tree.change_root_to_parent, opts('Up'))
 
@@ -93,11 +89,6 @@ require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
     adaptive_size = true,
-    mappings = {
-      list = {
-        { key = "u", action = "dir_up" },
-      },
-    },
   },
   renderer = {
     group_empty = true,
