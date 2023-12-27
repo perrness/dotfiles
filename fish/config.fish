@@ -10,7 +10,7 @@ alias python="/usr/local/bin/python3"
 
 # SSH stuff
 eval (ssh-agent -c)
-ssh-add --apple-use-keychain --apple-load-keychain  ~/.ssh/id_ed25519-2
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519-3
 
 # Set kubernetes editor
 export KUBE_EDITOR='nvim'
