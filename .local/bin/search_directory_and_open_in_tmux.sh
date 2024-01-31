@@ -41,7 +41,12 @@ start_tmux_session() {
   fi
 }
 
+start_idea_session() {
+  idea $directory
+}
+
 find_directory
+start_idea_session
 start_tmux_session
 
 exit 0
