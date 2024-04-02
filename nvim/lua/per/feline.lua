@@ -13,21 +13,21 @@ table.insert(components.inactive, {})
 table.insert(components.inactive, {})
 
 local one_monokai = {
-	fg = "#abb2bf",
-	bg = "#1e2024",
-	green = "#98c379",
-	yellow = "#e5c07b",
-	purple = "#c678dd",
-	orange = "#d19a66",
-	peanut = "#f6d5a4",
-	red = "#e06c75",
-	aqua = "#61afef",
-	darkblue = "#282c34",
-	dark_red = "#f75f5f",
+  fg = "#abb2bf",
+  bg = "#1e2024",
+  green = "#98c379",
+  yellow = "#e5c07b",
+  purple = "#c678dd",
+  orange = "#d19a66",
+  peanut = "#f6d5a4",
+  red = "#e06c75",
+  aqua = "#61afef",
+  darkblue = "#282c34",
+  dark_red = "#f75f5f",
 }
 
 local file_info_component = {
-  provider =  {
+  provider = {
     name = 'file_info',
     opts = {
       type = 'relative'
@@ -53,12 +53,12 @@ local file_type_component = {
 }
 
 local vi_mode_component = {
-  provider =  'vi_mode',
+  provider = 'vi_mode',
   hl = function()
     return {
-        name = require('feline.providers.vi_mode').get_mode_highlight_name(),
-        fg = require('feline.providers.vi_mode').get_mode_color(),
-        style = 'bold'
+      name = require('feline.providers.vi_mode').get_mode_highlight_name(),
+      fg = require('feline.providers.vi_mode').get_mode_color(),
+      style = 'bold'
     }
   end,
   right_sep = ' ',
@@ -159,9 +159,9 @@ components.active[1][5] = git_diff_changed_component
 
 components.active[2][1] = file_info_component
 
-components.active[3][1] = position_component 
+components.active[3][1] = position_component
 components.active[3][2] = file_type_component
-components.active[3][3] = encoding_component 
+components.active[3][3] = encoding_component
 components.active[3][4] = line_percentage_component
 components.active[3][5] = scroll_bar_component
 
