@@ -19,7 +19,6 @@ return {
   { "catppuccin/nvim",         name = "catppuccin", priority = 1000 },
   { "ellisonleao/gruvbox.nvim" },
   'freddiehaddad/feline.nvim',
-  'google/vim-jsonnet',
   {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
