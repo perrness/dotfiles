@@ -16,7 +16,7 @@ return {
     requires = { { 'nvim-lua/plenary.nvim' } }
   },
   'windwp/nvim-autopairs',
-  { "catppuccin/nvim",         as = "catppuccin" },
+  { "catppuccin/nvim",         name = "catppuccin", priority = 1000 },
   { "ellisonleao/gruvbox.nvim" },
   'freddiehaddad/feline.nvim',
   'google/vim-jsonnet',

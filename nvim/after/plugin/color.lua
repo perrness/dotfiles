@@ -3,10 +3,10 @@
 --   function_style = "italic",
 --   sidebars = {"qf", "vista_kind", "terminal", "packer"},
 --   transparent = true,
--- 
+--
 --   -- Change the "hint" color to the "orange" color, and make the "error" color bright red
 --   colors = {hint = "orange", error = "#ff0000"},
--- 
+--
 --   -- Overwrite the highlight groups
 --   overrides = function(c)
 --     return {
@@ -18,8 +18,18 @@
 --   end
 -- })
 
-vim.opt.background = "dark"
-
--- vim.cmd("colorscheme gruvbox")
-vim.g.catppuccin_flavour = "macchiato"
+-- vim.opt.background = "dark"
+--
+-- -- vim.cmd("colorscheme gruvbox")
+require("catppuccin").setup({
+  flavour = "frappe",
+  transparent_background = true,
+  integrations = {
+    cmp = true,
+    gitsigns = true,
+    nvimtree = true,
+    telescope = true,
+    treesitter = true,
+  },
+})
 vim.cmd("colorscheme catppuccin")
