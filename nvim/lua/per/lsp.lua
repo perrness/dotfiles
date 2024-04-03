@@ -46,6 +46,7 @@ local lsp_flags = {
 -- Format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
   buffer = buffer,
+  pattern = '*.tf',
   callback = function()
     vim.lsp.buf.format { async = false }
   end
