@@ -130,10 +130,4 @@ require('lspconfig')['gopls'].setup {
   capabilities = capabilities,
 }
 
-require('lspconfig')['ccls'].setup {
-  on_attach = on_attach,
-  flags = lsp_flags,
-  capabilities = capabilities,
-}
-
 -- vim.lsp.set_log_level("debug")
