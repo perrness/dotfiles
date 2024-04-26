@@ -58,7 +58,7 @@ key = "Key6"
 mods = "Control"
 
 [window]
-opacity = 0.80
+opacity = 1.0
 
 [window.padding]
 x = 2
