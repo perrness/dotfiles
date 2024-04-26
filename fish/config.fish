@@ -31,6 +31,7 @@ if [ -f '/Users/pernaess/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/
 # The original version is saved in /Users/pernaess/.config/fish/config.fish.pysave
 set -x PATH "/Library/Frameworks/Python.framework/Versions/3.10/bin" "$PATH"
 set -x PATH "/Users/perrichardnaess/toolboxscripts" "$PATH"
+set -gx PATH $PATH $HOME/.krew/bin
 
 # Keybindings
 bind \cf '~/repos/dotfiles/.local/bin/search_directory_and_open_in_tmux.sh'
