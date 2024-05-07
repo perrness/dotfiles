@@ -29,5 +29,5 @@ return {
     branch = "harpoon2",
     dependencies = { "nvim-lua/plenary.nvim" }
   },
-  'github/copilot.vim',
+  -- 'github/copilot.vim',
 }
