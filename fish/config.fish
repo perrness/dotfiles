@@ -13,6 +13,9 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519-3
 # Set kubernetes editor
 export KUBE_EDITOR='nvim'
 
+# Set work-gappynator-context
+export GAPPYNATOR_CONTEXT='docker-desktop'
+
 # Fish settings
 set fish_greeting
 
