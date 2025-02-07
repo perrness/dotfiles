@@ -18,7 +18,6 @@ return {
   'windwp/nvim-autopairs',
   { "catppuccin/nvim",         name = "catppuccin", priority = 1000 },
   { "ellisonleao/gruvbox.nvim" },
-  'freddiehaddad/feline.nvim',
   {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
