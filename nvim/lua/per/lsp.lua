@@ -46,7 +46,7 @@ local lsp_flags = {
 -- Format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
   buffer = buffer,
-  pattern = '*.tf',
+  pattern = '*.tf,*.go',
   callback = function()
     vim.lsp.buf.format { async = false }
   end
@@ -55,6 +55,9 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 -- Make the autocomplete sweet af
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+
+-- Logging
+-- vim.lsp.set_log_level(vim.log.levels.DEBUG)
 
 require('lspconfig')['lua_ls'].setup {
   on_attach = on_attach,
