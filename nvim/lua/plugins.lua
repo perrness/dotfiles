@@ -21,7 +21,7 @@ return {
   {
     "mason-org/mason.nvim",
     "mason-org/mason-lspconfig.nvim",
-    dependencies = { "neovim/nvim-lspconfig" },
+    "neovim/nvim-lspconfig",
     opts = {}
   },
   {
