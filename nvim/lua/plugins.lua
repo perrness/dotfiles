@@ -21,7 +21,8 @@ return {
   {
     "mason-org/mason.nvim",
     "mason-org/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig",
+    dependencies = { "neovim/nvim-lspconfig" },
+    opts = {}
   },
   {
     "ThePrimeagen/harpoon",
