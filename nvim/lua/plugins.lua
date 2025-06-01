@@ -19,8 +19,8 @@ return {
   { "catppuccin/nvim",         name = "catppuccin", priority = 1000 },
   { "ellisonleao/gruvbox.nvim" },
   {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
+    "mason-org/mason.nvim",
+    "mason-org/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
   },
   {
