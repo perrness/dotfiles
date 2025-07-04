@@ -24,5 +24,14 @@ require('telescope').setup{
     --   extension_config_key = value,
     -- }
     -- please take a look at the readme of the extension you want to configure
+    file_browser = {
+      initial_mode = "normal",
+      layout_strategy = "flex",
+      theme = "ivy",
+      -- disables netrw and use telescope-file-browser in its place
+      hijack_netrw = false,
+      git_status = true,
+    },
   }
 }
+require("telescope").load_extension "file_browser"

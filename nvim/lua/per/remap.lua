@@ -1,6 +1,6 @@
 local nnoremap = require("per.keymap").nnoremap
 
-nnoremap("<leader>pv", "<cmd>Ex<CR>")
+nnoremap("<leader>pv", ":Telescope file_browser<CR>")
 
 -- Telescope remap
 nnoremap ("<leader>ff", "<cmd>lua require('telescope.builtin').find_files({hidden = true})<cr>")

@@ -34,4 +34,9 @@ return {
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
   'github/copilot.vim',
+  {
+    "nvim-telescope/telescope-file-browser.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+
+  },
 }
