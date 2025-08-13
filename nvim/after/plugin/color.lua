@@ -21,15 +21,16 @@
 -- vim.opt.background = "dark"
 --
 -- -- vim.cmd("colorscheme gruvbox")
-require("catppuccin").setup({
-  flavour = "frappe",
-  transparent_background = true,
-  integrations = {
-    cmp = true,
-    gitsigns = true,
-    nvimtree = true,
-    telescope = true,
-    treesitter = true,
-  },
-})
-vim.cmd("colorscheme catppuccin")
+-- require("catppuccin").setup({
+--   flavour = "frappe",
+--   transparent_background = true,
+--   integrations = {
+--     cmp = true,
+--     gitsigns = true,
+--     nvimtree = true,
+--     telescope = true,
+--     treesitter = true,
+--   },
+-- })
+-- vim.cmd("colorscheme catppuccin")
+vim.cmd("colorscheme rose-pine")
