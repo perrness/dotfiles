@@ -43,5 +43,5 @@
 # resize-overlay-duration = 4s 200ms
 cursor-style-blink = false
 shell-integration-features = no-cursor
-theme = rose-pine
+theme = Rose Pine
 font-feature = -calt
