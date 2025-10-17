@@ -45,3 +45,4 @@ cursor-style-blink = false
 shell-integration-features = no-cursor
 theme = Rose Pine
 font-feature = -calt
+command = /opt/homebrew/bin/fish
