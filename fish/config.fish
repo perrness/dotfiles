@@ -27,7 +27,7 @@ if [ -f '/Users/pernaess/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/
 # Setting PATH for Python 3.10
 # The original version is saved in /Users/pernaess/.config/fish/config.fish.pysave
 set -x PATH "/Library/Frameworks/Python.framework/Versions/3.10/bin" "$PATH"
-set -x PATH "/Users/perrichardnaess/toolboxscripts" "$PATH"
+set -x PATH "/Users/Per-Richard.Naess/toolboxscripts" "$PATH"
 set -gx PATH $PATH $HOME/.krew/bin
 
 # Keybindings
