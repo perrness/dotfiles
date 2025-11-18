@@ -32,3 +32,10 @@ set -gx PATH $PATH $HOME/.krew/bin
 
 # Keybindings
 bind \cf '~/repos/dotfiles/.local/bin/search_directory_and_open_in_tmux.sh'
+
+# Load the current SDKMAN Java version
+set -l sdk_java_home (bash -c 'source $HOME/.sdkman/bin/sdkman-init.sh >/dev/null 2>&1 && echo $JAVA_HOME')
+if test -d "$sdk_java_home"
+    set -x JAVA_HOME $sdk_java_home
+    set -x PATH $JAVA_HOME/bin $PATH
+end
