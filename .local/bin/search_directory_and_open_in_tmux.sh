@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 find_directory() {
-  directory=$(find ~/repos -type d -print | fzf)
+  directory=$(find ~/repos -maxdepth 1 -type d -print | fzf)
   return_code="$?"
   if [ $return_code -ne 0 ]; then
     exit $return_code
