@@ -19,7 +19,7 @@ disabled = true
 # Kubernetes
 [kubernetes]
 format = 'on [☸ ($cluster in )\($namespace\)](bold yellow) '
-disabled = false
+disabled = true
 [kubernetes.context_aliases]
 "dev.local.cluster.k8s" = "dev"
 ".*/openshift-cluster/.*" = "openshift"
