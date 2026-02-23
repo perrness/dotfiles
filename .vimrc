@@ -25,6 +25,7 @@ set backspace=indent,eol,start
 set termguicolors
 set background=dark
 set encoding=utf-8
+set relativenumber
 
 let g:netrw_liststyle = 3
 
