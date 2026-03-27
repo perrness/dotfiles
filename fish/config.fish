@@ -39,3 +39,4 @@ if test -d "$sdk_java_home"
     set -x JAVA_HOME $sdk_java_home
     set -x PATH $JAVA_HOME/bin $PATH
 end
+export PATH="$HOME/.local/bin:$PATH"
