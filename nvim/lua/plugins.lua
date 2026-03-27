@@ -17,6 +17,12 @@ return {
   },
   'windwp/nvim-autopairs',
   { "catppuccin/nvim",         name = "catppuccin", priority = 1000 },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
   { "ellisonleao/gruvbox.nvim" },
   {
     "mason-org/mason.nvim",
@@ -34,6 +40,7 @@ return {
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
   'github/copilot.vim',
+  'mfussenegger/nvim-jdtls',
   {
     "nvim-telescope/telescope-file-browser.nvim",
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }

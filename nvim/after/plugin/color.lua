@@ -33,4 +33,5 @@
 --   },
 -- })
 -- vim.cmd("colorscheme catppuccin")
-vim.cmd("colorscheme rose-pine")
+-- vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme tokyonight")
