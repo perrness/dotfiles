@@ -1,3 +1,10 @@
+local lsp = require("per.lsp")
+
+vim.lsp.config("*", {
+  on_attach = lsp.on_attach,
+  capabilities = lsp.capabilities,
+})
+
 require("mason").setup({
     ui = {
         icons = {

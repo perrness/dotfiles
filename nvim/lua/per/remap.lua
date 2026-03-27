@@ -14,3 +14,4 @@ nnoremap ("<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
 nnoremap ("ª", "<cmd>:m-2<CR>")
 nnoremap ("√", "<cmd>:m+<CR>")
 
+
