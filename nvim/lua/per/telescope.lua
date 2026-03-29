@@ -1,5 +1,10 @@
 require('telescope').setup{
   defaults = {
+    file_ignore_patterns = {
+      ".git/", -- This line ignores the .git directory
+      "node_modules", -- Example of other ignored folders,
+      ".idea/"
+    },
     -- Default configuration for telescope goes here:
     -- config_key = value,
     mappings = {
