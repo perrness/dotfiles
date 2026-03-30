@@ -20,9 +20,14 @@ require('telescope').setup{
   pickers = {
     -- Default configuration for builtin pickers goes here:
     picker_name = {
-    }
+    },
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
+    lsp_references = {
+      show_line = false,
+      include_current_line = false,
+      fname_width = 100,
+    }
   },
   extensions = {
     -- Your extension configuration goes here:

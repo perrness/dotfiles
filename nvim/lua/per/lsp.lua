@@ -13,7 +13,9 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>D', require('telescope.builtin').lsp_type_definitions, bufopts)
   vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
   vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
-  vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, bufopts)
+  vim.keymap.set('n', 'gr', function()
+    require('telescope.builtin').lsp_references({ include_current_line = false })
+  end, bufopts)
   vim.keymap.set('n', '<space>f', vim.lsp.buf.format, bufopts)
 end
 
