@@ -1,1 +1,5 @@
-require("lazy").setup("plugins")
+require("lazy").setup("plugins", {
+  rocks = {
+    hererocks = false,
+  }
+})
