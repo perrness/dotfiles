@@ -1,6 +1,7 @@
 return {
   {
     'nvim-treesitter/nvim-treesitter',
+    branch = 'main',
     run = ':TSUpdate'
   },
   'nvim-tree/nvim-web-devicons',

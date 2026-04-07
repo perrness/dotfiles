@@ -16,6 +16,9 @@ require('telescope').setup{
       }
     },
     path_display = { "smart" },
+    preview = {
+      treesitter = false,
+    },
   },
   pickers = {
     -- Default configuration for builtin pickers goes here:
