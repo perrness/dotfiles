@@ -1,9 +1,4 @@
 return {
-  {
-    'nvim-treesitter/nvim-treesitter',
-    branch = 'main',
-    run = ':TSUpdate'
-  },
   'nvim-tree/nvim-web-devicons',
   'hrsh7th/nvim-cmp',         -- Autocompletion plugin
   'hrsh7th/cmp-nvim-lsp',     -- LSP source for nvim-cmp
@@ -25,12 +20,9 @@ return {
     opts = {},
   },
   { "ellisonleao/gruvbox.nvim" },
-  {
-    "mason-org/mason.nvim",
-    "mason-org/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig",
-    opts = {}
-  },
+  { "mason-org/mason.nvim", lazy = false },
+  { "mason-org/mason-lspconfig.nvim", lazy = false },
+  { "neovim/nvim-lspconfig", lazy = false },
   {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
